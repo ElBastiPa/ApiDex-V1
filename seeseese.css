@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Pokemon";
+    src: url(../Fonts/Pokemon\ Solid.ttf);
+}
+
+body{
+    font-family: "Arial";
+    background-image: url("../Images/lightTheme.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: black;
+    transition: 700ms;
+    text-align: center;
+}
+
+body.switchTheme{
+    font-family: Arial;
+    background-image: url("../Images/darkTheme.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: white;
+    transition: 700ms;
+}
+
+.pokemonList{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 40px;
+    padding: 1em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.imgSettings{
+    width: 150px;
+    height: 150px;  
+    margin-bottom: -50px;
+}
+
+.buttonSetting{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.buttonSetting2{
+    margin: 1em auto;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    transition: 500ms;
+}
+
+.buttonSetting2:hover{
+    cursor: pointer;
+    transition: 500ms;
+    transform: rotate(180rem);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 2em auto 2em;
+  }
+
+.miniSprite{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.pokemonCard{
+    background-color: darkgray;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    padding: 1em;
+    margin-right: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pokemonCard:hover{
+    background-color: gray;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.formControl{
+    height: 30px;
+    margin: 1em auto;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.switchTheme{
+    margin: 1em auto;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+
+}
+
+.switchTheme:hover{
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.logoSetting{
+    width: 70px;
+    height: 70px;
+    margin: 1em auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+}
+
+.searchBar{
+    margin: 1em auto;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+.extraSetting{
+    text-transform: capitalize;
+}
