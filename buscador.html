@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ApiDex</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/770px-Pok%C3%A9_Ball_icon.svg.png">
+  <link rel="stylesheet" href="./Style/seeseese.css">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <i><img src="/Images/themeButton.png" alt=""></i>
+    <a href="index.html"><img class="logoSetting" src="./Images/Poké_Ball_icon.svg.png" alt="logo"></a>
+    <a><img id="switchTheme" class="switchTheme" src="/Images/themeButton.png" alt=""></a>
+    <!-- <span>English</span>
+    <input type="checkbox" class="switch">
+    <span>Español</span> -->
+  </header>
+  <main>
+    <div class="container mt-5">
+        <h1>Welcome to pokemon searcher</h1>
+        <h2>Enter the name or ID of a Pokemon to view his stats</h2>
+        <input type="text" class="form-control mt-5 searchBar" id="pokemonName" placeholder="Enter pokemon name">
+        <button type="submit" class="btn btn-primary mt-3" id="searchPokemon">Submit</button>
+        <button class="btn btn-primary mt-3" id="clearPokemon">Clear list</button>
+        <div id="pokemonResult" class="resultCard extraSetting"></div>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./Javascript/darktheme.js"></script>
+  <script src="./Javascript/searchPokemon.js"></script>
+
+</body>
+</html>
